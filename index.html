@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Atlas Export — Consultoria em Exportação e Importação</title>
+  <meta name="description" content="Atlas Export — Consultoria em exportação e importação. Descomplique a exportação com a Atlas." />
+  <style>
+    :root{
+      --navy:#072447; /* cor corporativa escura */
+      --navy-2:#0b3560;
+      --muted:#6b7785;
+      --accent:#0b6bfd;
+      --max-width:1100px;
+      --radius:12px;
+      --glass: rgba(255,255,255,0.04);
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;color:#0f1720;line-height:1.5;background:linear-gradient(180deg,#f7f9fb 0%, #ffffff 100%);}
+    a{color:var(--navy);text-decoration:none}
+
+    header{background:transparent;position:sticky;top:0;z-index:50;padding:18px 20px;backdrop-filter: blur(6px);}
+    .container{max-width:var(--max-width);margin:0 auto;padding:0 20px}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{height:56px;width:auto}
+    .brand h1{font-size:20px;color:var(--navy);margin:0;font-weight:700;letter-spacing:0.6px}
+
+    nav ul{display:flex;gap:18px;align-items:center;margin:0;padding:0;list-style:none}
+    nav a{font-weight:600;color:var(--navy);}
+
+    /* mobile menu */
+    .menu-toggle{display:none;background:none;border:0;color:var(--navy);font-size:20px}
+
+    /* HERO */
+    .hero{padding:60px 0 46px}
+    .hero-grid{display:grid;grid-template-columns:1fr 420px;gap:36px;align-items:center}
+    .hero h2{font-size:34px;margin:0 0 14px;color:var(--navy)}
+    .hero p.lead{font-size:18px;color:var(--muted);margin:0 0 20px}
+    .cta{display:inline-block;background:var(--navy);color:white;padding:12px 18px;border-radius:10px;font-weight:700}
+    .card-hero{background:white;border-radius:14px;padding:22px;box-shadow:0 6px 18px rgba(10,20,30,0.06)}
+    .hero .logo-large{display:none}
+
+    /* SECTIONS */
+    section{padding:34px 0}
+    .section-title{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+    .section-title h3{margin:0;color:var(--navy)}
+    .about p{color:var(--muted);margin:0}
+
+    /* SERVICES */
+    .services-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .service{background:white;padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(10,20,30,0.04)}
+    .service h4{margin:0 0 8px;color:var(--navy)}
+    .service p{margin:0;color:var(--muted);font-size:14px}
+    .service ul{margin:10px 0 0;padding-left:18px;color:var(--muted);font-size:14px}
+
+    /* CONTACT */
+    .contact-grid{display:grid;grid-template-columns:1fr 360px;gap:22px}
+    .contact-card{background:white;padding:20px;border-radius:12px;box-shadow:0 6px 18px rgba(10,20,30,0.04)}
+    .contact-card h4{margin:0 0 10px}
+    .contact-info p{margin:6px 0;color:var(--muted)}
+    .form-row{display:flex;gap:10px}
+    .form-row input,.form-row textarea, .form-row button{width:100%}
+    input[type=text],input[type=email],textarea{padding:10px;border-radius:8px;border:1px solid #e6e9ee;font-size:14px}
+    textarea{min-height:120px;resize:vertical}
+    button.btn-send{background:var(--navy);color:white;border:0;padding:12px;border-radius:10px;font-weight:700}
+
+    footer{padding:24px 0;background:transparent;border-top:1px solid #eef3f7;margin-top:20px}
+    .footer-flex{display:flex;justify-content:space-between;align-items:center;gap:12px}
+    .socials a{margin-right:8px;font-weight:700;color:var(--muted)}
+
+    /* responsive */
+    @media (max-width:900px){
+      .hero-grid{grid-template-columns:1fr;}
+      .services-grid{grid-template-columns:1fr}
+      .contact-grid{grid-template-columns:1fr}
+      .brand h1{font-size:18px}
+      .brand img{height:48px}
+      nav ul{display:none}
+      .menu-toggle{display:block}
+      .hero{padding:30px 0}
+      .hero h2{font-size:26px}
+      .hero .logo-large{display:block;margin-top:18px}
+    }
+
+    /* small tweaks for very small screens */
+    @media (max-width:420px){
+      .container{padding:0 14px}
+      .brand img{height:44px}
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <!-- Coloque o arquivo do logo ao lado deste HTML em assets/logo.png -->
+        <h1>Atlas Export</h1>
+      </div>
+
+      <nav>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="main-menu">☰</button>
+        <ul id="main-menu">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" id="inicio">
+    <section class="hero">
+      <div class="hero-grid">
+        <div>
+          <h2>Descomplique a exportação com a Atlas.</h2>
+          <p class="lead">Consultoria especializada em exportação e importação — estratégia, conformidade regulatória e logística para sua empresa atuar com segurança e eficiência no mercado internacional.</p>
+          <a class="cta" href="#contato">Fale com a nossa equipe</a>
+
+          <div style="margin-top:20px;">
+            <div class="card-hero">
+              <strong>Serviços em destaque</strong>
+              <p style="margin:8px 0 0;color:var(--muted)">Desembaraço Aduaneiro · Regimes Especiais · Logística integrada</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-hero" aria-hidden="true">
+          <img src="img/WhatsApp Image 2025-10-07 at 20.36.02.jpeg" alt="Atlas Export" style="width:100%;height:auto;display:block;object-fit:contain" />
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="about">
+      <div class="section-title">
+        <h3>Sobre Nós</h3>
+      </div>
+      <div class="about">
+        <p>A Atlas Export é especializada em estratégia de exportação, com o objetivo de auxiliar empresas a se prepararem para atuar no mercado internacional de forma segura, eficiente e competitiva. Trabalhamos na adequação dos processos internos às exigências do comércio exterior, apoiando desde o diagnóstico do potencial exportador até a estruturação e implementação de estratégias personalizadas para cada mercado-alvo. Nosso foco é reduzir custos e riscos no processo de exportação, garantindo conformidade regulatória, eficiência logística e maior competitividade para sua empresa no cenário global.</p>
+      </div>
+    </section>
+
+    <section id="servicos">
+      <div class="section-title">
+        <h3>Serviços</h3>
+      </div>
+
+      <div class="services-grid">
+        <div class="service">
+          <h4>Desembaraço Aduaneiro</h4>
+          <p>Nossos diferenciais:</p>
+          <ul>
+            <li>Presença nos principais portos e aeroportos do país;</li>
+            <li>Excelente relacionamento com os órgãos anuentes (ANVISA, MAPA, DECEX, DENATRAN entre outros);</li>
+            <li>Consultoria aduaneira.</li>
+          </ul>
+        </div>
+
+        <div class="service">
+          <h4>Exportação</h4>
+          <ul>
+            <li>Elaboração de documentos de exportação (Fatura Comercial, Packing List etc.);</li>
+            <li>Emissão e Controle de Declarações de Origem;</li>
+          </ul>
+        </div>
+
+        <div class="service">
+          <h4>Regimes Especiais</h4>
+          <ul>
+            <li>Admissão temporária;</li>
+            <li>Admissão em Entreposto Aduaneiro;</li>
+            <li>Devolução/nacionalização de admissão temporária;</li>
+            <li>Drawback;</li>
+            <li>Importação de maquinário usado;</li>
+            <li>Exportação temporária;</li>
+            <li>Elaboração de pleito de obtenção de ex-tarifário;</li>
+            <li>Registro Especial de Selos para importação de bebidas;</li>
+            <li>Registro junto ao Ministério da Agricultura.</li>
+          </ul>
+        </div>
+
+        <div class="service">
+          <h4>Serviços Logísticos</h4>
+          <p>Com a Atlas Export, você faz tudo com uma única empresa: contratação e gerenciamento de coleta e transporte internacional, rodoviário, armazenagem portuária, portos secos, inspeção / fumigação de madeira e seguro internacional para as operações de Importação e Exportação de nossos clientes.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contato">
+      <div class="section-title">
+        <h3>Contato</h3>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h4>Fale com a equipe</h4>
+          <div class="contact-info">
+            <p><strong>Responsável:</strong> Rafaella</p>
+            <p><strong>E‑mail:</strong> <a href="mailto:rafaella@atlas.com">rafaella@atlas.com</a></p>
+            <p><strong>Telefone:</strong> (00) 0000-0000</p>
+            <p style="margin-top:8px;color:var(--muted)">Também podemos agendar uma consultoria inicial gratuita para entender o potencial exportador da sua empresa.</p>
+          </div>
+        </div>
+
+        <div class="contact-card" aria-labelledby="form-title">
+          <h4 id="form-title">Envie uma mensagem</h4>
+          <form onsubmit="handleSubmit(event)">
+            <label class="sr-only" for="name">Nome</label>
+            <input id="name" name="name" type="text" placeholder="Seu nome" required />
+            <label class="sr-only" for="email">E-mail</label>
+            <input id="email" name="email" type="email" placeholder="seu@email.com" required />
+            <label class="sr-only" for="message">Mensagem</label>
+            <textarea id="message" name="message" placeholder="Como podemos ajudar?" required></textarea>
+            <div style="display:flex;gap:10px;margin-top:12px">
+              <button class="btn-send" type="submit">Enviar mensagem</button>
+              <a class="btn-send" href="mailto:rafaella@atlas.com" style="background:#e8eef8;color:var(--navy);text-decoration:none;display:inline-flex;align-items:center;justify-content:center;padding:12px;border-radius:10px">Enviar por e‑mail</a>
+            </div>
+            <p id="form-status" style="margin-top:10px;color:var(--muted);font-size:14px"></p>
+          </form>
+          <small style="display:block;margin-top:10px;color:var(--muted)">* Formulário de aparência. Para envio real, conecte a um backend ou use um serviço de formulários.</small>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-flex">
+      <div>
+        <strong>Atlas Export</strong>
+        <div style="color:var(--muted);font-size:13px">© "Atlas Export" — 2025. Todos os direitos reservados.</div>
+      </div>
+      <div class="socials">
+        <a href="#">LinkedIn</a>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Menu toggle
+    const btn = document.querySelector('.menu-toggle');
+    const menu = document.getElementById('main-menu');
+    btn && btn.addEventListener('click', ()=>{
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!expanded));
+      menu.style.display = expanded ? 'none' : 'flex';
+      menu.style.flexDirection = 'column';
+      menu.style.background = 'white';
+      menu.style.position = 'absolute';
+      menu.style.right = '20px';
+      menu.style.top = '72px';
+      menu.style.padding = '12px';
+      menu.style.borderRadius = '10px';
+      menu.style.boxShadow = '0 8px 24px rgba(10,20,30,0.08)';
+    });
+
+    // Fake submit handler for demonstrative purposes
+    function handleSubmit(e){
+      e.preventDefault();
+      const status = document.getElementById('form-status');
+      status.textContent = 'Mensagem simulada enviada. Abra seu cliente de e‑mail ou conecte um backend para envio real.';
+      // limpando o formulário
+      e.target.reset();
+      setTimeout(()=> status.textContent = '', 6000);
+    }
+  </script>
+</body>
+</html>
